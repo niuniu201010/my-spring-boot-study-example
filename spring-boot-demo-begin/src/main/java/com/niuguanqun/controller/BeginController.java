@@ -12,22 +12,4 @@ public class BeginController {
     public String index() {
         return "Hello World";
     }
-
-
-
-
-    @RequestMapping("/testBuy")
-    public String testBuy() {
-        String path = "http://www.hxzyzx.net";
-        if (path.indexOf(".hxzyzx.net") > -1) {
-            String mweb_url = "&redirect_url=http://keadmin.xhe.cn/jumpToWXSuccessPage";
-            System.out.println(mweb_url);
-
-        }
-        return "asdf";
-    }
-
-
-
-
 }
