@@ -1,0 +1,33 @@
+# \u7AEF\u53E3\u914D\u7F6E
+server:
+  port: 8989
+# \u65E5\u5FD7\u914D\u7F6E
+logging:
+  level:
+    com.niuguanqun.springbootdemoshiro: debug
+
+# spring \u914D\u7F6E
+spring:
+    # \u6570\u636E\u6E90\u914D\u7F6E
+    datasource:
+      url: jdbc:mysql://localhost:3306/spring-boot-demo-shiro?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&useSSL=true
+      username: root
+      password: 201010
+      driver-class-name: com.mysql.cj.jdbc.Driver
+    # jpa \u914D\u7F6E
+    jpa:
+      database: mysql
+      show-sql: true
+      hibernate:
+        ddl-auto: update
+      properties:
+         hibernate:
+            dialect: org.hibernate.dialect.MySQL5Dialect
+
+    # thymeleaf\u914D\u7F6E
+    thymeleaf:
+       #\u53BB\u6389html\u7684\u6821\u9A8C
+       cache: false
+       mode: HTML
+
+
